@@ -27,7 +27,7 @@ Clock-clock follows the next business goals:
 - Sell time
 
 ### Demo
-![](https://github.com/Amirka-Kh/devops-labs/blob/lab1/demo.gif)
+![](https://github.com/Amirka-Kh/devops-labs/blob/lab1/app_python/demo.gif)
 
 ## Build
 1. Clone the repository.
