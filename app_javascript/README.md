@@ -21,3 +21,11 @@ Run next commands:
 
 Next, on terminal, from which you triggered build,
 you should see from which url an app is available
+
+To run app with docker, apply next steps:
+
+`docker build -t javapp .`
+
+`docker run javapp`
+
+Maybe it will work on your machine

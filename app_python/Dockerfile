@@ -1,5 +1,4 @@
 # syntax=docker/dockerfile:1cat
-
 FROM python:3.8-slim-buster
 
 WORKDIR /app
@@ -16,7 +15,5 @@ RUN adduser --disabled-password --gecos "" admin && chown -R admin /app
 USER admin
 
 EXPOSE 5000
-
-LABEL com.clockclock.version="0.0.1-beta"
 
 ENTRYPOINT ["/app/entrypoint.sh"]

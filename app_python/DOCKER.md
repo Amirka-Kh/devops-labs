@@ -1,4 +1,7 @@
-# Best practices
+Report
+=========
+
+## Best practices
 
 1. Avoid unnecessary privileges. Most containers run by the root user, while most of the 
 time it is not needed. Good practise to avoid it, and create a special user for those purposes.

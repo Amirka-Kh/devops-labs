@@ -47,24 +47,11 @@
         margin: 100px;
     }
 
-    .quotes {
+    #quotes {
         text-align: center;
         font-weight: bold;
         color: white;
         font-size: 60px;
-    }
-
-    .btn-container {
-        text-align: center;
-        background: black;
-        color: white;
-        width: 100%;
-        height: 100px;
-        padding-top: 10px;
-    }
-
-    #give-cat {
-        font-size: 25px;
     }
 
     img {

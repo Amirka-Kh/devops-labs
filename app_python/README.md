@@ -1,13 +1,16 @@
 Clock-clock
 =======================
 
-[![GitHub Super-Linter](https://github.com/Amirka-Kh/devops-labs/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter)
+![py test](https://github.com/Amirka-Kh/devops-labs/actions/workflows/python-app.yml/badge.svg?style=for-the-badge)
+![docker](https://github.com/Amirka-Kh/devops-labs/actions/workflows/lint.yml/badge.svg?style=for-the-badge)
 
 ## Content
 1. [Description](#description)
 > * [Project description](#project-description)
 > * [Demo](#demo)
 2. [Build](#build)
+> * [Without Docker](#without-docker)
+> * [With Docker](#with-docker)
 3. [Project requirements](#project-requirements)
 > * [User Stories](#user-stories)
 > * [Required Features](#required-features)
@@ -27,13 +30,24 @@ Clock-clock follows the next business goals:
 - Sell time
 
 ### Demo
-![](https://github.com/Amirka-Kh/devops-labs/blob/lab1/app_python/demo.gif)
+![](https://github.com/Amirka-Kh/devops-labs/blob/lab2/app_python/demo.gif)
 
 ## Build
+### Without Docker
 1. Clone the repository.
 2. Initialize virtual enviroment.
 3. Install the requirements.
 4. Start the app by `python <path_to_file>/main.py`
+### With Docker
+1. Clone the repository. Go to `app_python` folder
+2. Build an image `docker build --tag clock-clock:v1.0.0 .`
+or pull an image from docker hub `docker pull 254689393895236/clock-clock:v1.0.0`
+3. Create and run a container from the built image
+if you pulled an image then type the following:
+`docker run -d --publish 8000:5000 --name clock-server 254689393895236/clock-clock:v1.0.0`
+if you build it locally type next:
+`docker run -d --publish 8000:5000 --name clock-server clock-clock:v1.0.0`
+4. Access the website `localhost:8000`
 
 ## Project requirements
 ### User Stories
